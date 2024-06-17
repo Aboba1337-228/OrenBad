@@ -1,0 +1,26 @@
+.sidenav{
+    left: 0;
+}
+
+.sidenav_item{
+    max-width: 245px;
+    margin-bottom: 12px;
+}
+
+.sidenav_item a{
+    line-height: 30px;
+}
+.sidenav_item hr{
+    border-bottom: 1px solid #7ECA9C;
+}
+.sidenav_item.active p {
+    color: #7ECA9C;
+}
+@media (max-width: 610px) {
+    .sideNav {
+        column-count: 2;
+        margin-bottom: 10px;
+    }
+    .sidenav_item hr{
+        border-bottom: none;
+    }}

@@ -1,0 +1,23 @@
+.catalog{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 5vw;
+}
+.catalogCards{
+    display: flex;
+    flex-direction: column;  
+}
+
+.pagitaion {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+@media (max-width: 610px) {
+    .catalog {
+      grid-template-columns: 1fr;
+      gap: 2vw;
+    }
+
+  }

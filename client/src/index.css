@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+*:where(:not(html, iframe, canvas, img, svg, video, audio, select, input):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+  color: #7ECA9C;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+htmml, body{
+  background-color: #F5F7F7;
+  color: #40394A;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 16px;
+  font-family: Open Sans;
+}
+
+html{
+	scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin-inline: auto;
+}
+.content{
+  margin-top: 45px;
+  min-height: 70vh;
+  width: 100%;
+}
+
+h1{
+  font-size: 28px;
+}
+
+h2{
+  font-size: 20px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+h4{
+  font-size: 14px;
+}
+
+.txt_white{
+  color: #F5F7F7;
+}
+
+.txt_green{
+  color: #7ECA9C;
+}
+
+.txt_grey{
+  color: #878A92;
+}
+
+.txt_red{
+  color: #CA7E7E;
+}
+.lettering_bold{
+  font-weight: 700;
+}
+.lettering_semi_bold{
+  font-weight: 600;
+}
+
+.lettering_regular{
+  font-weight: 400;
+}
+.headline{
+  margin-bottom: 40px;
+  text-align: center;
+}
+.txt_row{
+  display: flex;
+  gap: 5px;
+  align-items:baseline;
+}
+.mar-35{
+  height: 50px;
+}
+
+.price::after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+  }
+
+  .row_counter{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .my_button {
+    border-radius: 12px;
+    background: #7ECA9C;
+    padding: 15px 45px;
+}
+
+.my_button1 {
+  border-radius: 12px;
+  background: #7ECA9C;
+  padding: 15px 100px;
+} 
+.my_button:hover {
+    background: #878A92;
+    transition: 0.8s;
+    color: #F5F7F7;
+    cursor: pointer;
+}
+
+@media (max-width: 610px) {
+  .my_button1 {
+    padding: 10px 50px;
+    text-align: center;
+  }
+}
